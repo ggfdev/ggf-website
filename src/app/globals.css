@@ -1,0 +1,189 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light Theme (Source: github/src/app/globals.css) */
+  --color-primary: #000000;
+  --color-primary-light: #333333;
+  --color-primary-dark: #666666;
+  --color-accent: #000000;
+
+  /* Neutrals */
+  --color-bg-light: #D8DBDE;
+  --color-bg-dark: #D8DBDE;
+  --color-bg-pure: #ffffff;
+  --color-text-light: #09090b;
+  --color-text-dim: #4a4a4f;
+
+  /* Component Specifics (Original) */
+  --color-hero-fade: rgb(216, 219, 222);
+  --color-code-window: #1e1e1e;
+  --color-evolve-window: #070b14;
+  --color-code-text: #d1d5db;
+
+  /* Spacing */
+  --radius-card: 24px;
+  --radius-button: 12px;
+  --tracking-wide: 0.15em;
+  --tracking-tight: -0.02em;
+  --weight-thin: 200;
+  --weight-light: 300;
+
+  /* Particles (Standard for Light) */
+  --color-particle-1: 0, 0, 0;
+  --color-particle-2: 10, 10, 10;
+  --color-particle-3: 30, 30, 30;
+}
+
+[data-theme="dark"] {
+  /* Unified Midnight Dark Theme */
+  --color-primary: #ffffff;
+  --color-primary-light: #cccccc;
+  --color-primary-dark: #999999;
+  --color-accent: #ffffff;
+
+  /* Neutrals - Proper Dark */
+  --color-bg-light: #020617;
+  --color-bg-dark: #020617;
+  --color-bg-pure: #020617;
+  --color-text-light: #ffffff;
+  --color-text-dim: #a1a1a6;
+
+  /* Component Specifics - Dark Optimized */
+  --color-hero-fade: #020617;
+  --color-code-window: #1e1e1e;
+  --color-evolve-window: #070b14;
+  --color-code-text: #d1d5db;
+
+  /* Cards - Dark Optimized */
+  --color-card-bg: rgba(255, 255, 255, 0.05);
+  --color-card-text: #ffffff;
+  --color-card-border: rgba(255, 255, 255, 0.1);
+
+  /* Effects - Dark Optimized */
+  --glow-color: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --nav-bg: rgba(2, 6, 23, 0.84);
+  /* Midnight Nav */
+
+  /* Particles (Bright in Dark) */
+  --color-particle-1: 129, 140, 248;
+  /* Indigo */
+  --color-particle-2: 192, 132, 252;
+  /* Purple */
+  --color-particle-3: 255, 255, 255;
+  /* White */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--color-bg-dark);
+  color: var(--color-text-light);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: var(--tracking-tight);
+}
+
+.text-thin-wide {
+  font-weight: var(--weight-thin);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-card-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Global Effects */
+.glow-viewport {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  box-shadow: inset 0 0 150px 20px var(--glow-color);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #000 0%, #000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme="dark"] .text-gradient {
+  background: linear-gradient(135deg, #fff 0%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-card);
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    opacity: 0.5;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+  }
+
+  100% {
+    opacity: 0.5;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+}
