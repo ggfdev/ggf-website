@@ -29,6 +29,7 @@ import type { Metadata } from 'next';
     return (
       <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
         <head>
+          <meta name="facebook-domain-verification" content="8g1jrhodo9tkgey5o80x5efj7dqa7x" />
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
