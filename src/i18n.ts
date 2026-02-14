@@ -170,16 +170,94 @@ export const translations = {
         waitlist: {
             title: 'Genişlemeye ',
             titleAccent: 'Katıl.',
-            description: "Şu an sınırlı betadayız. GGF'nin yapay zeka destekli oyun fabrikası ile üretim yapan ilk yaratıcılar arasında yerinizi ayırtın.",
+            description: 'Şu an sınırlı betadayız. GGF ile inşa eden ilk yaratıcılar arasında yerinizi ayırtın.',
+            benefits: [
+                'Platformu ilk kullananlardan biri olun',
+                'Ne inşa ettiğimizi şekillendirin — fikirleriniz gerçekten önemli',
+                'Oyunlarınızı sergileyin ve topluluk geri bildirimleriyle büyüyün'
+            ],
             cardTitle: 'Erken Erişim İçin',
-            cardSubtitle: 'Kredi kartı gerekmez. Sadece vizyonunuz.',
+            cardSubtitle: '',
             placeholder: 'E-posta adresinizi girin',
             button: 'Erken Erişim Al',
             loading: 'Şifreleniyor...',
             success: 'Listeye eklendiniz! Yakında gelen kutunuzu kontrol edin.',
             footer: 'Güvenli ve Gizli • Anında Doğrulama',
             gamesLabel: 'Üretilen Oyunlar',
-            devsLabel: 'Bekleyen Geliştiriciler'
+            devsLabel: 'Bekleyen Geliştiriciler',
+            form: {
+                fullname: 'Ad Soyad',
+                fullnamePlaceholder: 'Ad ve soyadınızı girin',
+                experience: 'Oyun geliştirme deneyiminiz var mı?',
+                experienceOptions: {
+                    none: 'Yok',
+                    hobby: 'Hobi seviyesi',
+                    freelancer: 'Serbest çalışan',
+                    professional: 'Profesyonel',
+                    studio: 'Stüdyo sahibi / Ekip üyesi',
+                    indie: 'Bağımsız Stüdyo',
+                    other: 'Diğer'
+                },
+                engines: 'Hangi oyun motorlarını kullandınız?',
+                enginesHelper: '(Birden fazla seçim yapabilirsiniz)',
+                enginesOptions: {
+                    unity: 'Unity',
+                    unreal: 'Unreal Engine',
+                    godot: 'Godot',
+                    phaser: 'Phaser / Web tabanlı',
+                    gamemaker: 'GameMaker',
+                    rpgmaker: 'RPG Maker',
+                    construct: 'Construct',
+                    none: 'Hiç kullanmadım',
+                    other: 'Diğer'
+                },
+                programming: 'Programlama bilginiz var mı?',
+                programmingOptions: {
+                    none: 'Hiç bilgim yok',
+                    beginner: 'Başlangıç seviyesi (değişkenler, döngüler vb.)',
+                    intermediate: 'Orta seviye (Küçük projeler yapabilirim)',
+                    advanced: 'İleri seviye (Profesyonel yazılım geliştiriciyim)'
+                },
+                useCase: 'GGF\'yi öncelikle ne için kullanmak istersiniz?',
+                useCaseOptions: {
+                    prototype: 'Kendi oyun fikirlerimi hızlıca prototiplemek',
+                    nocode: 'Kod yazmadan oyun oluşturmak',
+                    learn: 'Oyun geliştirmeyi öğrenmek',
+                    commercial: 'Ticari oyunlar üretmek',
+                    educational: 'Eğitim / öğretim içeriği oluşturmak',
+                    hobby: 'Eğlence / hobi amaçlı',
+                    other: 'Diğer'
+                },
+                timeCommitment: 'Erken Erişim döneminde haftada ne kadar zaman ayırabilirsiniz?',
+                timeCommitmentOptions: {
+                    less1: '1 saatten az',
+                    between1_3: '1-3 saat',
+                    between3_5: '3-5 saat',
+                    more5: '5+ saat',
+                    uncertain: 'Belirsiz, müsaitlik durumuma göre'
+                },
+                devices: 'GGF\'yi hangi cihazlarda test etmek istersiniz?',
+                devicesHelper: '(Birden fazla seçim yapabilirsiniz)',
+                devicesOptions: {
+                    windows: 'Windows PC',
+                    mac: 'Mac',
+                    linux: 'Linux',
+                    ios: 'Mobil (iOS)',
+                    android: 'Mobil (Android)',
+                    tablet: 'Tablet'
+                },
+                introduction: 'Kendiniz hakkında kısa bir tanıtım yazın',
+                introductionHelper: '(Erken erişim, GGF\'nin gelişim sürecine katkı sağlayabilecek kişilere verilecektir.)',
+                introductionPlaceholder: 'Kendinizi tanıtın, deneyimlerinizi ve GGF ile neler yapmak istediğinizi paylaşın...',
+                socialMedia: 'Sosyal medya veya içerik platformlarınız var mı?',
+                socialMediaOptions: {
+                    yes: 'Evet',
+                    no: 'Hayır'
+                },
+                socialMediaUsername: 'Sosyal medya kullanıcı adınız veya link',
+                socialMediaUsernamePlaceholder: 'Örn: @username, youtube.com/c/channel',
+                submit: 'Başvuruyu Gönder'
+            }
         },
         footer: {
             desc: 'AI destekli oyun fabrikası. Doğal dili oynanabilir gerçekliğe dönüştürüyoruz.',
@@ -365,16 +443,94 @@ export const translations = {
         waitlist: {
             title: 'Join the ',
             titleAccent: 'Expansion.',
-            description: "We are currently in limited beta. Secure your spot to be among the first creators building with GGF's AI-powered game factory.",
+            description: 'We are currently in limited beta. Secure your spot to be among the first creators building with GGF.',
+            benefits: [
+                'Be one of the first people to get your hands on the platform',
+                'Help shape what we\'re building — your ideas actually matter here',
+                'Show off your games and grow with community feedback'
+            ],
             cardTitle: 'For Early Access',
-            cardSubtitle: 'No credit card required. Just your vision.',
+            cardSubtitle: '',
             placeholder: 'Enter your email',
             button: 'Get Early Access',
             loading: 'Encrypting...',
             success: "You're on the list! Check your inbox soon.",
             footer: 'Secure & Private • Instant Verification',
             gamesLabel: 'Games Created',
-            devsLabel: 'Devs in Waitlist'
+            devsLabel: 'Devs in Waitlist',
+            form: {
+                fullname: 'Full Name',
+                fullnamePlaceholder: 'Enter your full name',
+                experience: 'Do you have game development experience?',
+                experienceOptions: {
+                    none: 'None',
+                    hobby: 'Hobby level',
+                    freelancer: 'Freelancer',
+                    professional: 'Professional',
+                    studio: 'Studio owner / Team member',
+                    indie: 'Indie Studio',
+                    other: 'Other'
+                },
+                engines: 'Which game engines have you used?',
+                enginesHelper: '(Multiple choice)',
+                enginesOptions: {
+                    unity: 'Unity',
+                    unreal: 'Unreal Engine',
+                    godot: 'Godot',
+                    phaser: 'Phaser / Web-based',
+                    gamemaker: 'GameMaker',
+                    rpgmaker: 'RPG Maker',
+                    construct: 'Construct',
+                    none: 'I have not used any',
+                    other: 'Other'
+                },
+                programming: 'Do you have programming knowledge?',
+                programmingOptions: {
+                    none: 'No knowledge at all',
+                    beginner: 'Beginner level (variables, loops, etc.)',
+                    intermediate: 'Intermediate level (I can build small projects)',
+                    advanced: 'Advanced level (I am a professional software developer)'
+                },
+                useCase: 'What would you primarily like to use GGF for?',
+                useCaseOptions: {
+                    prototype: 'Quickly prototyping my own game ideas',
+                    nocode: 'Creating games without writing code',
+                    learn: 'Learning game development',
+                    commercial: 'Producing commercial games',
+                    educational: 'Creating educational / instructional content',
+                    hobby: 'Entertainment / hobby purposes',
+                    other: 'Other'
+                },
+                timeCommitment: 'How much time can you dedicate per week during the Early Access period?',
+                timeCommitmentOptions: {
+                    less1: 'Less than 1 hour',
+                    between1_3: '1–3 hours',
+                    between3_5: '3–5 hours',
+                    more5: '5+ hours',
+                    uncertain: 'Uncertain, depending on availability'
+                },
+                devices: 'On which devices would you like to test GGF?',
+                devicesHelper: '(You may select more than one)',
+                devicesOptions: {
+                    windows: 'Windows PC',
+                    mac: 'Mac',
+                    linux: 'Linux',
+                    ios: 'Mobile (iOS)',
+                    android: 'Mobile (Android)',
+                    tablet: 'Tablet'
+                },
+                introduction: 'Please write a short introduction about yourself',
+                introductionHelper: '(Early access will be granted to individuals who can contribute to GGF\'s development process.)',
+                introductionPlaceholder: 'Introduce yourself, share your experience and what you would like to do with GGF...',
+                socialMedia: 'Do you have any social media or content platforms?',
+                socialMediaOptions: {
+                    yes: 'Yes',
+                    no: 'No'
+                },
+                socialMediaUsername: 'Your social media username or link',
+                socialMediaUsernamePlaceholder: 'Ex: @username, youtube.com/c/channel',
+                submit: 'Submit Application'
+            }
         },
         footer: {
             desc: 'The AI-powered game factory. Transforming natural language into playable reality.',
